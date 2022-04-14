@@ -17,9 +17,9 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #c0392b;
-  --marketplaceColorLight: #ff4c38;
-  --marketplaceColorDark: #8c291e;
+  --marketplaceColor: #343434;
+  --marketplaceColorLight: #71A7FF;
+  --marketplaceColorDark: #090909;
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23c0392b;
@@ -44,12 +44,12 @@
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 
   /* ================ Font ================ */
-  --fontFamily: 'poppins', Helvetica, Arial, sans-serif;
+  --fontFamily: 'Noto Serif Display', Helvetica, Arial, sans-serif;
 
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
   --fontWeightSemiBold: 600;
-  --fontWeightBold: 700;
+  --fontWeightBold: 800;
 
   --fontWeightHighlightEmail: var(--fontWeightBold);
 
@@ -279,9 +279,9 @@ textarea {
 
 .fontsLoaded {
   & body {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
   }
   & button {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
   }
 }

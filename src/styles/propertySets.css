@@ -23,7 +23,7 @@
   --backgroundImage: {
     /* Gradient direction and overlaying the black color on top of the image for better readability */
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
-      url('../../assets/background-1440.jpg');
+      url('../../assets/Hero.jpg');
 
     /* Add loading color for the div */
     background-color: var(--matterColor);
@@ -152,7 +152,7 @@
   /* ================ H1, H2, H3, H4, H5 & H6 ================ */
 
   --marketplaceH1FontStyles: {
-    font-weight: var(--fontWeightSemiBold);
+    font-weight: var(--fontWeightBold);
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.5px;
@@ -162,7 +162,7 @@
 
     @media (--viewportMedium) {
       font-size: 40px;
-      font-weight: var(--fontWeightSemiBold);
+      font-weight: var(--fontWeightBold);
       line-height: 48px;
       letter-spacing: -1px;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
@@ -172,7 +172,7 @@
   }
 
   --marketplaceH2FontStyles: {
-    font-weight: var(--fontWeightSemiBold);
+    font-weight: var(--fontWeightBold);
     font-size: 21px;
     line-height: 24px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
@@ -204,8 +204,8 @@
 
   --marketplaceH4FontStyles: {
     font-weight: var(--fontWeightMedium);
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 1.4em;
     letter-spacing: 0;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 12px;
@@ -391,10 +391,10 @@
   /* ================ Buttons ================ */
 
   --marketplaceButtonFontStyles: {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
     font-weight: var(--fontWeightSemiBold);
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.4em;
     letter-spacing: 0.2px;
 
     @media (--viewportMedium) {
@@ -423,7 +423,7 @@
     border-radius: var(--borderRadius);
 
     /* Colors */
-    background-color: var(--marketplaceColor);
+    background-color: var(--marketplaceColorLight);
     color: var(--matterColorLight);
 
     /* Text */
