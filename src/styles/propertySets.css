@@ -69,16 +69,16 @@
   --marketplaceBodyFontStyles: {
     font-family: var(--fontFamily);
     font-weight: var(--fontWeightMedium);
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 1.25em;
     letter-spacing: -0.1px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 12px;
     margin-bottom: 12px;
 
     @media (--viewportMedium) {
-      font-size: 16px;
-      line-height: 32px;
+      font-size: 18px;
+      line-height: 1.25em;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 16px;
       margin-bottom: 16px;
@@ -88,6 +88,7 @@
   /* ================ Hero title ================ */
 
   --marketplaceHeroTitleFontStyles: {
+    font-family: 'Noto Serif Display' !important;
     font-weight: var(--fontWeightBold);
     font-size: 36px;
     line-height: 36px;
@@ -136,6 +137,7 @@
   /* ================ Modal title ================ */
 
   --marketplaceModalTitleStyles {
+    font-family: 'Noto Serif Display' !important;
     font-weight: var(--fontWeightSemiBold);
     font-size: 30px;
     line-height: 36px;
@@ -152,18 +154,18 @@
   /* ================ H1, H2, H3, H4, H5 & H6 ================ */
 
   --marketplaceH1FontStyles: {
+    font-family: 'Noto Serif Display' !important;
     font-weight: var(--fontWeightBold);
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 50px;
+    line-height: 1em;
     letter-spacing: -0.5px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 18px;
     margin-bottom: 18px;
 
     @media (--viewportMedium) {
-      font-size: 40px;
+      font-size: 60px;
       font-weight: var(--fontWeightBold);
-      line-height: 48px;
       letter-spacing: -1px;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 24px;
@@ -188,31 +190,33 @@
   }
 
   --marketplaceH3FontStyles: {
-    font-weight: var(--fontWeightSemiBold);
-    font-size: 18px;
-    line-height: 24px;
+    font-family: 'Noto Serif Display' !important;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1em;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 16px;
     margin-bottom: 14px;
 
     @media (--viewportMedium) {
       /* margin-top + n * line-height + margin-bottom => x * 8px */
+      font-size: 50px;
       margin-top: 16px;
       margin-bottom: 16px;
     }
   }
 
   --marketplaceH4FontStyles: {
-    font-weight: var(--fontWeightMedium);
-    font-size: 20px;
-    line-height: 1.4em;
+    font-family: 'Noto Serif Display' !important;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1em;
     letter-spacing: 0;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 12px;
     margin-bottom: 12px;
 
     @media (--viewportMedium) {
-      font-weight: var(--fontWeightMedium);
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 17px;
       margin-bottom: 15px;

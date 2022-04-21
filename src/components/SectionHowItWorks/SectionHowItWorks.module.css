@@ -5,6 +5,10 @@
   margin-top: 0;
 }
 
+#SectionHowItWorks.titleLineTwo {
+  @apply --marketplaceH5FontStyles;
+}
+
 .steps {
   display: flex;
   flex-direction: column;

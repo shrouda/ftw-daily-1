@@ -85,9 +85,9 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'smoke', label: 'Smoke' },
-        { key: 'electric', label: 'Electric' },
-        { key: 'wood', label: 'Wood' },
+        { key: 'house', label: 'House' },
+        { key: 'cabin', label: 'Cabin' },
+        { key: 'apartment', label: 'Apartment' },
         { key: 'other', label: 'Other' },
       ],
     },
@@ -109,36 +109,36 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         {
-          key: 'towels',
-          label: 'Towels',
+          key: 'standing_desks',
+          label: 'Standing Desks',
         },
         {
-          key: 'bathroom',
-          label: 'Bathroom',
+          key: 'computer_monitors',
+          label: 'Computer Monitors',
         },
         {
-          key: 'swimming_pool',
-          label: 'Swimming pool',
+          key: 'high_speed_wifi',
+          label: 'High Speed Wifi',
         },
         {
-          key: 'own_drinks',
-          label: 'Own drinks allowed',
+          key: 'full_kitchen',
+          label: 'Full Kitchen',
         },
         {
           key: 'jacuzzi',
           label: 'Jacuzzi',
         },
         {
-          key: 'audiovisual_entertainment',
-          label: 'Audiovisual entertainment',
+          key: 'swimming_pool',
+          label: 'Swimming Pool',
         },
         {
           key: 'barbeque',
           label: 'Barbeque',
         },
         {
-          key: 'own_food_allowed',
-          label: 'Own food allowed',
+          key: 'gorgeous_views',
+          label: 'Gorgeous Views',
         },
       ],
     },

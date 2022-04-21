@@ -10,7 +10,14 @@ import { NamedRedirect } from './components';
 
 const pageDataLoadingAPI = getPageDataLoadingAPI();
 
+const FAQPage = loadable(() =>
+  import(
+    /* webpackChunkName: "FAQPage" */ './containers/FAQPage/FAQPage'
+  )
+);
+
 const AboutPage = loadable(() => import(/* webpackChunkName: "AboutPage" */ './containers/AboutPage/AboutPage'));
+const AddAListingPage = loadable(() => import(/* webpackChunkName: "AddAListingPage" */ './containers/AddAListingPage/AddAListingPage'));
 const AuthenticationPage = loadable(() => import(/* webpackChunkName: "AuthenticationPage" */ './containers/AuthenticationPage/AuthenticationPage'));
 const CheckoutPage = loadable(() => import(/* webpackChunkName: "CheckoutPage" */ './containers/CheckoutPage/CheckoutPage'));
 const ContactDetailsPage = loadable(() => import(/* webpackChunkName: "ContactDetailsPage" */ './containers/ContactDetailsPage/ContactDetailsPage'));
@@ -67,6 +74,11 @@ const routeConfiguration = () => {
       path: '/about',
       name: 'AboutPage',
       component: AboutPage,
+    },
+    {
+      path: '/faq',
+      name: 'FAQPage',
+      component: FAQPage,
     },
     {
       path: '/s',
@@ -332,6 +344,12 @@ const routeConfiguration = () => {
       path: '/reset-password',
       name: 'PasswordResetPage',
       component: PasswordResetPage ,
+    },
+
+    {
+      path: '/add-a-listing',
+      name: 'AddAListingPage',
+      component: AddAListingPage ,
     },
 
     // Do not change this path!

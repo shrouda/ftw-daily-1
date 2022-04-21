@@ -20,7 +20,7 @@
   align-items: center;
 
   /* fill */
-  background-color: var(--matterColorLight);
+  background-color: var(--matterColorDark);
 
   /* shadows */
   box-shadow: var(--boxShadow);
@@ -127,10 +127,10 @@
 
 /* Icon component styles */
 .rootMenuIcon {
-  fill: var(--matterColor);
+  fill: var(--matterColorLight);
 }
 .rootSearchIcon {
-  stroke: var(--matterColor);
+  stroke: var(--matterColorLight);
 }
 
 .searchContainer {

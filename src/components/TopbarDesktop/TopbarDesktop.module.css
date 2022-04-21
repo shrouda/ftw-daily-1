@@ -3,7 +3,6 @@
 /* Desktop */
 .root {
   /* Size */
-  width: 100%;
   height: var(--topbarHeightDesktop);
 
   /* Layout for child components */
@@ -14,7 +13,7 @@
   padding: 0 12px 0 0;
 
   /* fill */
-  background-color: var(--matterColorLight);
+  background-color: var(--matterColorDark);
 
   /* shadows */
   box-shadow: var(--boxShadowLight);
@@ -27,14 +26,18 @@
 /* logo */
 .logoLink {
   @apply --TopbarDesktop_linkHover;
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
+  flex-grow: 1;
   padding: 21px 24px 21px 24px;
   height: 100%;
 
   @media (--viewportLarge) {
     padding: 21px 36px 21px 36px;
+    margin-right: 570px;
+
   }
 }
+
 
 .logo {
   /* If height is increased, change link paddings accordingly */
@@ -50,11 +53,14 @@
 
 /* Search */
 .searchLink {
+  display: none;
+  /* Hiding search bar while we wait for marketplace listings to increase
   flex-grow: 1;
+  */
   height: 100%;
   margin-right: 24px;
   border-left-style: solid;
-  border-left-width: 1px;
+  border-left-width: 0px;
   border-left-color: var(--matterColorNegative);
 
   @media (--viewportLarge) {
@@ -63,9 +69,9 @@
 }
 
 .search {
-  @apply --marketplaceH4FontStyles;
+  @apply --marketplaceH5FontStyles;
   @apply --TopbarDesktop_label;
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 }
 
 .topbarSearchWithLeftPadding {
@@ -85,12 +91,12 @@
   flex-shrink: 0;
   height: 100%;
   padding: 0 12px 0 12px;
-  color: var(--marketplaceColor);
+  color: var(--matterColorLight);
   margin-top: 0;
   margin-bottom: 0;
 
   &:hover {
-    color: var(--marketplaceColorDark);
+    color: var(--matterColorBlue);
   }
 
   @media (--viewportMedium) {
@@ -111,10 +117,10 @@
   padding: 0 12px 0 12px;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--matterColorBlue);
   }
 
   @media (--viewportMedium) {
@@ -200,10 +206,10 @@
   height: 100%;
   padding: 0 12px 0 12px;
 
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--matterColorBlue);
   }
 }
 
@@ -213,10 +219,10 @@
   height: 100%;
   padding: 0 12px 0 12px;
 
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--matterColorBlue);
   }
 }
 
@@ -248,12 +254,12 @@
   padding: 4px 24px;
 
   /* Layout details */
-  color: var(--matterColor);
+  color: var(--matterColorLight);
   text-align: left;
   transition: var(--transitionStyleButton);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--matterColorBlue);
     text-decoration: none;
 
     & .menuItemBorder {
@@ -290,7 +296,7 @@
   border-top-color: var(--matterColorNegative);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--matterColorBlue);
     text-decoration: none;
 
     & .menuItemBorder {
@@ -308,17 +314,17 @@
 }
 
 .currentPage {
-  color: var(--matterColorDark);
+  color: var(--matterColorBlue);
   position: relative;
 
   & .menuItemBorder {
     width: 6px;
-    background-color: var(--matterColorDark);
+    background-color: var(--matterColorBlue);
   }
 
   &:hover {
     & .menuItemBorder {
-      background-color: var(--matterColorDark);
+      background-color: var(--matterColorBlue);
     }
   }
 }

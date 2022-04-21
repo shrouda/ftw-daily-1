@@ -7,7 +7,7 @@
 
   width: 100%;
   padding: 24px 24px 42px 24px;
-  background-color: var(--matterColorBright);
+  background-color: var(--matterColorDark);
 
   @media (--viewportMedium) {
     padding: 0 24px 33px 24px;
@@ -22,8 +22,10 @@
 /* Wrapper to limit the top border in desktop
  * view from the outermost paddings*/
 .topBorderWrapper {
+  padding-top: 50px;
+
   @media (--viewportMedium) {
-    padding-top: 41px;
+    padding-top: 100px;
   }
 
   @media (--viewportLarge) {
@@ -33,6 +35,26 @@
     border-top-width: 1px;
     border-top-color: var(--matterColorNegative);
   }
+}
+
+.customShapeDividerBottom1650353096 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerBottom1650353096 svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 40px;
+}
+
+.customShapeDividerBottom1650353096 .shapeFill {
+    fill: var(--matterColorBright);
 }
 
 .content {
@@ -124,6 +146,7 @@
 }
 
 .organizationInfo {
+  color: var(--matterColorLight);
 }
 
 .organizationDescription,
@@ -136,7 +159,7 @@
 }
 
 .copyrightLink {
-  color: var(--matterColor);
+  color: var(--matterColorAnti);
   transition: var(--transitionStyleButton);
 
   &:hover {
@@ -176,7 +199,7 @@
   /* Font */
   @apply --marketplaceH5FontStyles;
   line-height: 20px;
-  color: var(--matterColor);
+  color: var(--matterColorLight);
   transition: var(--transitionStyleButton);
 
   margin-top: 0;
@@ -297,7 +320,7 @@
   justify-content: space-between;
   align-items: flex-end;
 
-  background-color: var(--matterColorLight);
+  background-color: var(--matterColorDark);
 
   @media (--viewportMedium) {
     display: none;

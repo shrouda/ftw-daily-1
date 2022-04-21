@@ -1,0 +1,144 @@
+.mainWrapper {
+
+  margin: auto;
+  overflow: hidden;
+
+
+  @media (--viewportMedium) {
+
+  }
+}
+
+section {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.heroContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+  height: 400px;
+  background: linear-gradient(to top, #000000bb, #000000dd), url('././addalisting.jpg') no-repeat center;
+  background-size: cover;
+
+  @media (--viewportMedium) {
+
+  }
+}
+
+.centeredText {
+  color: var(--matterColorLight);
+  width: calc(100% - 48px);
+  max-width: 720px;
+  margin: auto;
+  margin-top: 100px;
+
+  @media (--viewportMedium) {
+    max-width: 800px;
+    width: calc(100% - 72px);
+  }
+}
+
+.centeredText h1 {
+
+@media (--viewportMedium) {
+  font-size: 64px;
+  }
+}
+
+.centeredText h5 {
+  margin-top: -10px;
+}
+
+.caption {
+  color: var(--matterColorAnti);
+  width: calc(100% - 48px);
+  max-width: 720px;
+  margin: auto;
+  margin-bottom: 100px;
+  font-style: italic;
+
+  @media (--viewportMedium) {
+    max-width: 800px;
+    width: calc(100% - 72px);
+  }
+}
+
+.customShapeDividerBottom1650353096 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.customShapeDividerBottom1650353096 svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 63px;
+}
+
+.customShapeDividerBottom1650353096 .shapeFill {
+    fill: var(--matterColorBright);
+}
+
+.mainContent {
+  width: calc(100% - 48px);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  @media (--viewportMedium) {
+    max-width: 800px;
+    width: calc(100% - 72px);
+  }
+}
+
+.midSection {
+  position: relative;
+  display: flex;
+  height: 500px;
+  background: url('././addalisting2.jpg') no-repeat center;
+  width: calc(100% - 48px);
+  max-width: 720px;
+  margin: auto;
+  border-radius: var(--borderRadius);
+  background-size: cover;
+
+
+  @media (--viewportMedium) {
+    max-width: 800px;
+    width: calc(100% - 72px);
+  }
+}
+
+.buttonSection {
+  max-width: 720px;
+  margin: auto;
+
+
+  @media (--viewportMedium) {
+    max-width: 800px;
+    width: calc(100% - 72px);
+  }
+}
+
+.joinButton {
+  width: 90%;
+  background-color: var(--marketplaceColorLight);
+  border-radius: var(--borderRadius);
+  border: 0px;
+  min-height: 50px;
+  color: var(--matterColorDark);
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+
+}
